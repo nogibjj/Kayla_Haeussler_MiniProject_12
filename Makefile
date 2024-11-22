@@ -1,5 +1,5 @@
 # Define the image name
-IMAGE_NAME = de_demo
+IMAGE_NAME = kaylas_demo
 DOCKER_ID_USER = khaeuss
 
 # Build the Docker image
@@ -8,7 +8,7 @@ build:
 
 # Run the Docker container
 run:
-	docker run -p 5000:5000 $(IMAGE_NAME)
+	docker run -p 8000:80 $(IMAGE_NAME)
 
 # Remove the Docker image
 clean:
